@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" ></script>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <center><h1>
+            Cifrado AES-DES
+        </h1>
+        <form>
+            <input type="radio" name="AES" id="AES">
+            <label for="AES"> Cifrar en AES</label><br>
+            <input type="radio" name="DES" id="DES">
+            <label for="DES"> Cifrar en DES </label><br>
+            <label for="llave"> Escribe tu llave aqui</label>
+            <input type="text" id="key" name="llave"><br>
+        </form>
+        <div id="cifrar">
+            <form>
+                <h2>Cifrar</h2>
+                <label for="file"> Añade tu archivo cifrado aqui</label>
+                <input type="file" id="mensajeDescifrado" name="file"><br>
+                
+            </form>
+            <button onclick="cifrar()">Cifrar</button>
+        </div>
+        <div id="descifrar">
+            <form>
+                <h2>Descifrar</h2>
+                <label for="dfile"> Añade tu archivo cifrado aqui</label>
+                <input type="file" id="mensajeCifrado" name="file"><br>
+                
+            </form>
+            <button onclick="descifrar()">Descifrar</button>
+            </div>
+		</center>
+        <script src="js/logic.js"></script>
+    </body>
+</html>
